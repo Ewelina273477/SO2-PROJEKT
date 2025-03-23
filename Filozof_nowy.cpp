@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <thread>
 #include <mutex>
 #include <vector>
@@ -46,19 +46,19 @@ public:
 
         {
             lock_guard<mutex> lock(queueMutex);
-            requestQueue.push(id);
+            requestQueue.push(id); // Philosopher requests to eat
         }
 
         // Waiter manages philosophers' access to eating
         while (true) {
             lock_guard<mutex> lock(waiterMutex);
             if (!requestQueue.empty() && requestQueue.front() == id && eatingCount < numPhilosophers - 1) {
-                requestQueue.pop();
+                requestQueue.pop(); // Philosopher gets permission to eat
                 eatingCount++;
                 break;
             }
         }
-        // Pick up forks
+        // Pick up forks (left first, then right)
         forks[left].lock();
         forks[right].lock();
 
@@ -78,12 +78,12 @@ public:
 
         {
             lock_guard<mutex> lock(waiterMutex);
-            eatingCount--;
+            eatingCount--; // Philosopher finishes eating
         }
     }
 
     void stop() {
-        stopFlag = true;
+        stopFlag = true; // Stop all philosophers
     }
 };
 
@@ -108,10 +108,10 @@ int main() {
     cin.ignore();
     cin.get();
 
-    dp.stop();
+    dp.stop(); // Signal philosophers to stop
 
     for (auto& t : philosophers) {
-        if (t.joinable()) t.join();
+        if (t.joinable()) t.join(); // Wait for all threads to finish
     }
 
     cout << "All philosophers have finished eating!" << endl;
