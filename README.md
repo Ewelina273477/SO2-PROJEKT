@@ -103,4 +103,6 @@ Program został zaimplementowany w języku C++ przy użyciu biblioteki `<thread>
 Dzięki temu projektowi można lepiej zrozumieć, jak działa programowanie współbieżne, jakie problemy mogą się w nim pojawić oraz jak skutecznie je rozwiązywać. 
 
 ## 6. Bibliografia
-
+* https://pl.wikipedia.org/wiki/Problem_ucztuj%C4%85cych_filozof%C3%B3w
+* https://home.agh.edu.pl/~balis/dydakt/tw/lab8/tw-5fil.pdf
+* https://ssamolej.kia.prz.edu.pl/dydaktyka/pwir/pwir_wyk3_Czyt_Pis_Fil_Bar.pdf
