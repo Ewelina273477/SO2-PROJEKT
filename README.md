@@ -2,12 +2,11 @@
 
 ## Spis treści 
 1. Wprowadzenie
-2. Opis problemu
-3. Technologia  
-4. Jak działa program?
-5. Opis implementacji
-6. Podsumowanie i wnioski
-7. Bibliografia 
+2. Opis problemu  
+3. Jak działa program?
+4. Opis implementacji
+5. Podsumowanie i wnioski
+6. Bibliografia 
 
 
 
@@ -36,7 +35,7 @@ Problemem jest taki przydział zasobów, aby:
 * Algorytmy planowania procesów – zapobieganie zakleszczeniom (deadlock) i zagłodzeniu (starvation).
 
 
-## 4. Jak działa program?
+## 3. Jak działa program?
 
 1. Użytkownik podaje liczbę filozofów.
 
@@ -50,7 +49,7 @@ Problemem jest taki przydział zasobów, aby:
 
 6. Wszystkie wątki są bezpiecznie zamykane, a program kończy działanie.
 
-## 5. Opis implementacji
+## 4. Opis implementacji
 
 Program został zaimplementowany w języku C++ przy użyciu biblioteki `<thread>` do obsługi wielowątkowości oraz `<mutex>` do synchronizacji dostępu do zasobów, `<queue>` – implementacja FIFO dla sprawiedliwego dostępu `requestQueue` znajdująca się poza klasą `DiningPhilosophers`.
 
@@ -90,7 +89,7 @@ Program został zaimplementowany w języku C++ przy użyciu biblioteki `<thread>
 * Kelner (`waiterMutex`) – pozwala maksymalnie n-1 filozofom jeść jednocześnie, eliminując ryzyko zakleszczenia.
 
 
-## 6. Podsumowanie i wnioski
+## 5. Podsumowanie i wnioski
 
 
 * Program działa poprawnie i nie dochodzi do zakleszczeń – filozofowie cyklicznie myślą i jedzą. Dzięki kolejce FIFO żaden filozof nie jest głodzony, co oznacza, że każdy dostaje swoją kolej do jedzenia. Muteksy i kelner zapewniają, że nie dochodzi do sytuacji, w której wszyscy filozofowie próbują podnieść widelce jednocześnie, dbając o sprawiedliwy podział zasobów i efektywnie zapobiegają zakleszczeniu i zagłodzeniu filozofów.
@@ -103,5 +102,5 @@ Program został zaimplementowany w języku C++ przy użyciu biblioteki `<thread>
 
 Dzięki temu projektowi można lepiej zrozumieć, jak działa programowanie współbieżne, jakie problemy mogą się w nim pojawić oraz jak skutecznie je rozwiązywać. 
 
-## 7. Bibliografia
+## 6. Bibliografia
 
