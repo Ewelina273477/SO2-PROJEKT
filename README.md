@@ -107,8 +107,8 @@ Dzięki temu projektowi można lepiej zrozumieć, jak działa programowanie wsp�
 
 * Windows
   
-  Visual Studio 2022: Projekt -> wybierz tryb (release/debug) w jakim chcesz odpalić program -> kliknij jednocześnie Fn+F5 -> wpisz liczbę filozofów -> enter -> aby zakończyć działanie programu -> enter
-  zamknięcie okna -> emter lub krzyżyk w prawym górym rogu
+  Visual Studio 2022: Projekt -> wybierz tryb (release/debug) w jakim chcesz odpalić program -> kliknij jednocześnie Fn+F5 -> wpisz liczbę filozofów -> enter -> aby zakończyć działanie programu -> enter ->
+  zamknięcie okna -> enter lub krzyżyk w prawym górym rogu
 
 * Linux
   
