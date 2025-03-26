@@ -106,10 +106,12 @@ Dzięki temu projektowi można lepiej zrozumieć, jak działa programowanie wsp�
 ## 6. Instrukcja uruchamiania
 
 * Windows
+  
   Visual Studio 2022: Projekt -> wybierz tryb w jakim chcesz odpalić program -> kliknij jednocześnie Fn+F5 -> wpisz liczbę filozofów -> enter -> aby zakończyć działanie programu -> enter
   zamknięcie okna -> emter lub krzyżyk w prawym górym rogu
 
 * Linux
+  
   skompiluj program: g++ -o Filozof_nowy Filozof_nowy.cpp
   instrukcja uruchomienia: ./Filozof_nowy 5
 
