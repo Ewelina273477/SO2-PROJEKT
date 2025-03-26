@@ -6,7 +6,8 @@
 3. Jak działa program?
 4. Opis implementacji
 5. Podsumowanie i wnioski
-6. Bibliografia 
+6. Instrukcja uruchamiania 
+7. Bibliografia 
 
 
 
@@ -102,7 +103,17 @@ Program został zaimplementowany w języku C++ przy użyciu biblioteki `<thread>
 
 Dzięki temu projektowi można lepiej zrozumieć, jak działa programowanie współbieżne, jakie problemy mogą się w nim pojawić oraz jak skutecznie je rozwiązywać. 
 
-## 6. Bibliografia
+## 6. Instrukcja uruchamiania
+
+* Windows
+  Visual Studio 2022: Projekt -> wybierz tryb w jakim chcesz odpalić program -> kliknij jednocześnie Fn+F5 -> wpisz liczbę filozofów -> enter -> aby zakończyć działanie programu -> enter
+  zamknięcie okna -> emter lub krzyżyk w prawym górym rogu
+
+* Linux
+  skompiluj program: g++ -o Filozof_nowy Filozof_nowy.cpp
+  instrukcja uruchomienia: ./Filozof_nowy 5
+
+## 7. Bibliografia
 * https://pl.wikipedia.org/wiki/Problem_ucztuj%C4%85cych_filozof%C3%B3w
 * https://home.agh.edu.pl/~balis/dydakt/tw/lab8/tw-5fil.pdf
 * https://ssamolej.kia.prz.edu.pl/dydaktyka/pwir/pwir_wyk3_Czyt_Pis_Fil_Bar.pdf
